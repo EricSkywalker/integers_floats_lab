@@ -4,10 +4,10 @@ from integers_and_floats import integer_division, float_integer_multiplication, 
 
 class Test(TestCase):
     def test_integer_division(self):
-        self.assertEqual(integer_division(), type(1.0))
+        self.assertEqual(integer_division(), type(1/1))
 
     def test_float_integer_multiplication(self):
-        self.assertEqual(float_integer_multiplication(), type(1.0))
+        self.assertEqual(float_integer_multiplication(), type(1.1*1))
 
     def test_inputs_are_strings(self):
-        self.assertEqual(inputs_are_strings(), 7 / 2.2)
+        self.assertEqual(inputs_are_strings(), type(1/0.1))
